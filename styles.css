@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.header{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid orangered;
+    background-color: black;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 11px 21px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+nav lu li a:hover{
+    color: orangered;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* fin header */
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+}
+.texte{
+    width: 100%;
+    padding-right: 21px;
+}
+.texte h1{
+    font-size: 3rem;
+    margin-bottom: 21px;
+}
+span{
+    color: orangered;
+}
+.texte p{
+    font-size: 1.1rem;
+    margin-bottom: 21px;
+}
+.texte .btn{
+    background-color: orangered;
+    color: white;
+    padding: 11px 21px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.texte .btn:hover{
+background-color: yellow;
+}
+.image{
+    width: 70%;
+    text-align: center;
+    margin-left: 40%;
+}
+.image img{
+    max-width: 100%;
+    height: 40rem;
+    background-color: chocolate;
+    border-top-left-radius: 22rem;
+    border-bottom-right-radius: 22rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: orangered;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.comp{
+    display: flex;
+    justify-content: center;
+    gap: 20PX;
+}
+.card{
+    background-color: black;
+    border-radius: 11px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 2px 4px 10px color gray;
+    transition: transform 0.3s ease-in-out;
+}
+i{
+    color: orangered;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+h3{
+    color: orangered;
+    margin-bottom: 12px;
+}
+.btn2{
+    background-color: orangered;
+    padding: 9px 20px;
+    border-radius: 9px;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.card:hover{
+    background-color: rgb(18, 88, 33);
+    transform: scale(1.05);
+}
+.Gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: 2rem;
+}
+.album{
+    position: relative;
+    overflow: hidden;
+    border-radius: 11px;
+    box-shadow: 2px 4px 11px orangered;
+}
+.album img{
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.info{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0.5;
+    color: white;
+}
+.info h3,.info p{
+    color: white;
+    margin: 10px 0;
+}
+.album :hover img{
+transform: scale(1.05);
+}
+.album:hover .info{
+    opacity: 0.8;
+    background-color: rgb(11, 61, 32);
+}
+.contact{
+    display: flex;
+    height: 70vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.address{
+    overflow: hidden;
+    flex: 1;
+}
+.formulaire{
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 4px 10px orangered;
+}
+label{
+    display: block;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+input,textarea{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid orangered;
+}
+form button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: orangered;
+}
+.footer{
+    background-color: black;
+    margin-top: 3rem;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tel i{
+    margin-right: 10px;
+    color: orangered;
+}
+.social {
+    display: flex;
+    gap: 15px;
+}
+.social i{
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+.social i:hover{
+    color: orangered;
+}
+@media (max-whidth:1024px) {
+    .section{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .texte h1{
+        font-size: 2.5rem;
+    }
+    .texte p{
+        font-size: 1rem;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        height: auto;
+    }
+    .Gallery{
+        grid-template-columns: repeat(auto-fit (200px,1fr));
+    }
+}
+@media (max-width:760px) {
+    nav ul{
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav ul li{
+        margin-bottom: 10px;
+    }
+    .section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .texte h1{
+        font-size: 2rem;
+    }
+    .texte p{
+        font-size: 0.8rem;
+    }
+    .texte .btn{
+        padding: 10px 20px;
+    }
+    .image img{
+        height: auto;
+    }
+    .comp{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 2px;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .tel,.footer .social{
+        margin-bottom: 20px;
+    }
+    .social{
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    .texte h1{
+        font-size: 1.5rem;
+    }
+    .texte p{
+        font-size: 0.7rem;
+    }
+    .texte .btn{
+        padding: 8px 16px;
+    }
+    .image img{
+        height: auto;
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    .formulaire{
+        padding: 20px;
+    }
+}
